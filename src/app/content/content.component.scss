@@ -1,0 +1,48 @@
+// Definicja zmiennych dla spójnego designu
+$primary-color: #4a90e2; // Nowoczesny odcień niebieskiego
+$text-color: #333;
+$bg-color: #f5f7fa;
+$btn-hover-color: darken($primary-color, 10%);
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: $bg-color;
+  padding: 3rem;
+
+  .container {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $btn-hover-color;
+    }
+  }
+}

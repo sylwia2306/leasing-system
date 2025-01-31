@@ -1,0 +1,72 @@
+// Kolory i zmienne
+$primary-color: #4a90e2; // Niebieski odcień
+$text-color: #333;
+$bg-color: #f5f7fa;
+$card-bg: #ffffff;
+$card-shadow: rgba(0, 0, 0, 0.1);
+
+// Styl sekcji
+.about-us {
+  background-color: $bg-color;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .container {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    background: $card-bg;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px $card-shadow;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color;
+      margin-top: 0.5rem;
+    }
+  }
+}
