@@ -47,15 +47,7 @@
             &:hover::after {
                 width: 100%;
                 left: 0;
-            }
-
-            &.active {
-                background-color: white;
-                color: #70a1ff;
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-                transform: scale(1.05);
-                animation: pulse 1.5s infinite alternate;
-            }
+            }  
         }
     }
 }
